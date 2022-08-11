@@ -1,0 +1,18 @@
+BasedOnStyle: LLVM
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+
+ColumnLimit: 100
+SortIncludes: true
+CommentPragmas: NOLINT:.*
+DerivePointerAlignment: false
+IndentWidth: 4
+PointerAlignment: Left
+TabWidth: 4
+UseTab: Never
+PenaltyExcessCharacter: 32
+MaxEmptyLinesToKeep: 1
+AllowShortIfStatementsOnASingleLine: false
+AccessModifierOffset: -4
+
+Cpp11BracedListStyle: false

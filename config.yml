@@ -1,0 +1,3 @@
+ifname: eth0
+metricsInterval: 30s
+redirectUrlLinux: https://www.baidu.com
