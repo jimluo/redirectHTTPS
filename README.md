@@ -20,7 +20,7 @@
 ### 存在问题
 1. 用户终端入网后先用浏览器手动访问HTTPS网站时，返回给终端浏览器的重定向响应，由于浏览器验证服务器证书不匹配会警告，无法实施强制认证，使此技术方案失效。如图
 
- ![浏览器警告](../images/https-redirect/1warning.png)
+ ![浏览器警告](https://jimluo.github.io/images/https-redirect/1warning.png)
 
 2. 用户终端网络在线时，由管控服务端实施准入策略，在未认证前断网，直到浏览器发出HTTP后被准入服务重定向后去认证。由于浏览器预制的HSTS域名缓存或服务端支持HSTS技术，HTTP被浏览器强制转换为HTTPS，致使浏览器验证服务器证书不匹配会警告，使此技术方案失效
 3. 原有准入系统实施基于浏览器http重定向的认证功能，在https下失效，报错证书不匹配，无法实施强制认证，使此技术方案失效。
@@ -32,11 +32,11 @@
 2. 如果指定服务返回了204状态码，即未发现强制门户，不需要验证
 3. 如果指定服务返回HTTP重定向认证，即强制门户认证，认证后网络放行
 
-![发出探测](../images/https-redirect/2captive-portal.png)
+![发出探测](https://jimluo.github.io/images/https-redirect/2captive-portal.png)
 
 图1 OS发出探测
 
-![收到响应，证明无强制门户](../images/https-redirect/3captive-portal-204.png)
+![收到响应，证明无强制门户](https://jimluo.github.io/images/https-redirect/3captive-portal-204.png)
 
 图2 OS收到无强制门户的204状态
 
@@ -56,7 +56,7 @@ Android:https://www.google.com/generate_204，... 
 - 交换机方案依赖交换机的控制，普通服务没有控制交换机的权限
 - 浏览器方案依赖用户先打开浏览器
 
-![网络拓扑](../images/https-redirect/4topology.png)
+![网络拓扑](https://jimluo.github.io/images/https-redirect/4topology.png)
 
 图3 HTTPS重定向的网络拓扑
 
